@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ramp Generator</title>
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <style>
+      #ramp-results {
+        float: left;
+        clear: both;
+        width: 100%;
+      }
+      .ramp-block {
+        float: left;
+        height: 50px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h1>Generate a ramp!</h1>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-4">
+          <form id="generate-ramp-form">
+            <div class="form-group">
+              <label for="number-of-colors">Number of colors lighter/darker</label>
+              <input id="number-of-colors" class="form-control" value="2" />
+            </div>
+            <div class="form-group">
+              <label for="middle-color-value">Middle color value</label>
+              <input id="middle-color-value" class="form-control" value="#3388aa" />
+            </div>
+            <div class="form-group">
+              <label for="hue-shift-per-step">Hue Shift Per Step (degrees)</label>
+              <input id="hue-shift-per-step" class="form-control" value="10" />
+            </div>
+            <div class="form-group">
+              <label for="saturation-shift-per-step">Saturation Shift Per Step (percent)</label>
+              <input id="saturation-shift-per-step" class="form-control" value="10" />
+            </div>
+            <div class="form-group">
+              <label for="value-shift-per-step">Value Shift Per Step (percent)</label>
+              <input id="value-shift-per-step" class="form-control" value="10" />
+            </div>
+            <input type="submit" title="Generate" />
+          </form>
+        </div>
+
+        <div class="col-md-8">
+          <div id="ramp-results"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+
+</html>
