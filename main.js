@@ -1,5 +1,4 @@
 var Color = require('color');
-var $ = require('jquery');
 
 var makeBlock = function(color, totalCount) {
   width = (1 / totalCount) * 100;
@@ -46,4 +45,6 @@ $(function() {
     $(this).closest(".ramp-group").remove()
     return false;
   });
+
+  $("#middle-color-value").colorPicker()
 });

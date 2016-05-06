@@ -9,7 +9,6 @@
     "bootstrap": "^3.3.6",
     "browserify": "^13.0.0",
     "color": "^0.11.1",
-    "jquery": "^2.2.3",
     "watchify": "^3.7.0"
   }
 }
